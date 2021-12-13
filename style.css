@@ -1,17 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body{
     margin: 0;
-    background-color:white;
-    color:black;
+    background-color:var(--white);
+    color:var(--black);
     font-size: 16px;
     line-height: 24px;
     font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: var(--black);
+    height: 132px;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-top{
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
-    color: grey;
+    color: var(--primary-main);
 }
 .container{
     width: 1200px;
@@ -20,38 +37,21 @@ body{
 }
 
 .color-blue{
-    color:rgb(0, 195, 255);
-}
-
-a{
-    text-decoration: none;
+    color:var(--secondary);
 }
 
 .color-gray{
-    color:gray;
-}
-
-header{
-    width: 100%;
-    background-color: black;
-    height: 130px;
+    color:var(--primary-main);
 }
 
 .socseti{
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     padding: 0 8px;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
 .main-nav{
-    margin-top: 30px;
+    margin-top: 32px;
     width: 700px;
     list-style: none;
     display: flex;
@@ -73,8 +73,8 @@ nav{
 
 .avatar{
     border-radius:50%;
-    border: 5px solid rgb(0, 195, 255);
-    filter: opacity(0.8);
+    border: 4px solid var(--secondary);
+    opacity: 0.8;
 }
 
 .name{
@@ -92,8 +92,8 @@ nav{
 
 .name h2{
     margin: 0;
-    padding: 5px 0;
-    width: 850px;
+    padding: 4px 0;
+    width: 848px;
     font-weight: 400;
     font-style: italic;
     text-align: center;
@@ -111,14 +111,14 @@ nav{
 }
 
 .updatas{
-    margin: 0 10px;
+    margin: 0 12px;
     width: 65%;
-    border:1px solid #f2f0f0;
+    border:1px solid var(--primary-main);
 }
 
 .menu{
-    background-color:#f2f0f0;
-    border-bottom: 1px solid #053bfc;
+    background-color:var(--white);
+    border-bottom: 1px solid var(--secondary);
 }
 
 .menu ul{
@@ -130,29 +130,29 @@ nav{
 
 .menu li{
     padding:15px;
-    border-right:1px solid lightgray;
+    border-right:1px solid var(--primary-main);
 }
 
 .menu a:hover{
-    color:rgb(0, 195, 255);
+    color:var(--secondary);
 }
 
 .person{
     padding-top: 20px;
-    padding-right: 10px;
+    padding-right: 12px;
     display: flex;
     justify-content: space-between;
 }
 
 .person ul{
     margin: 0px;
-    padding-left: 15px;
+    padding-left: 16px;
     display: flex;
     list-style: none;
 }
 
 .person li{
-    padding:0 15px;
+    padding:0 16px;
 }
 
 .person a{
@@ -160,21 +160,21 @@ nav{
 }
 
 .person a:hover{
-    color:rgb(0, 195, 255);
+    color:var(--secondary);
 }
 
 .person select{
-    padding: 5px 45px;
+    padding: 4px 44px;
 }
 
 .column{
-    margin: 0 10px;
+    margin: 0 12px;
     width: 34%;
 }
 
 .data{
-    padding: 10px 20px;
-    border:1px solid #f2f0f0;
+    padding: 12px 20px;
+    border:1px solid var(--primary-main);
 }
 
 .form{
@@ -184,7 +184,7 @@ nav{
 }
 
 .form select{
-    padding: 5px;
+    padding: 4px;
     width: 160px;
 }
 
@@ -194,15 +194,15 @@ nav{
 
 .btn{
     width: 80px;
-    padding: 7px 15px;
-    height: 35px;
+    padding: 8px 16px;
+    height: 36px;
     text-align: center;
     vertical-align: middle;
     text-decoration: none;
-    color: white;
-    background-color: rgb(0, 195, 255);
+    color: var(--white);
+    background-color: var(--secondary);
     border-radius: 4px;
-    border: 1px solid rgb(0, 195, 255);
+    border: 1px solid var(--secondary);
 }
 
 .data a{
@@ -216,11 +216,11 @@ nav{
 }
 
 .data a:hover{
-    color: rgb(0, 195, 255);
+    color: var(--secondary);
 }
 
 .new{
-    margin-top: 50px;
+    margin-top: 48px;
     margin-left: 20px;
     display: flex;
     vertical-align: top;
@@ -236,12 +236,12 @@ nav{
 }
 
 .new a{
-    color:black;
+    color:var(--black);
     font-weight: 700;
 }
 
 .new a:hover{
-    color: rgb(0, 195, 255);
+    color: var(--secondary);
 }
 
 .time{
@@ -251,30 +251,30 @@ nav{
 .about{
     margin-bottom: 20px;
     margin-right: 20px;
-    border-bottom: 1px solid #f2f0f0;
+    border-bottom: 1px solid var(--primary-main);
 }
 
 .size{
-    width: 295px;
+    width: 296px;
     height: 240px;
 }
 
 .comment{
     display: flex;
     margin-right: 20px;
-    border-bottom: 1px solid #f2f0f0;
+    border-bottom: 1px solid var(--primery-main);
 }
 
 .updatas h3 a{
-    margin: 50px;
+    margin: 48px;
 }
 
 .updatas h3 a:hover{
-    color:rgb(0, 195, 255);
+    color:var(--secondary);
 }
 
 footer{
-    background-color:#414245 ;
+    background-color:var(--primary-dark) ;
 }
 
 .col{
@@ -282,46 +282,47 @@ footer{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 250px;
-    color: lightgray;
+    width: 248px;
+    color: var(--primary-main);
 }
 
 .teg{
-    margin:3px;
+    margin:4px;
     font-size: 0.75em;
     padding: 4px;
 }
 
 .col a:hover{
-    color:rgb(0, 195, 255);
+    color:var(--secondary);
 }
 
 .col p, .col a{
     font-size: 0.75em;
-    color: lightgray;
+    color: var(--primary-main);
 }
 
 .col input{
-    padding: 10px;
+    padding: 12px;
 }
 
 .category a{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #f2f0f0;
+    border-bottom: 1px solid var(--primary-main);
     font-size: 1em;
-    color: lightgray;
+    color: var(--primary-main);
 }
 
 .footer-menu{
-    padding: 50px 0;
+    padding: 48px 0;
     display: flex;
     justify-content: space-between;
 }
 
-@media screen and (max-width:767px){
+@media (max-width:768px){
+
     .container{
-        max-width: 750px;
+        max-width: 748px;
     }
 
     .header-top{
@@ -349,7 +350,7 @@ footer{
 
     .name h2{
         margin: 0;
-        padding: 5px 0;
+        padding: 4px 0;
         max-width: 400px;
         font-weight: 400;
         font-style: italic;
@@ -363,7 +364,7 @@ footer{
     }
 
     .size{
-        width: 150px;
+        width: 148px;
         height: 120px;
     }
 
@@ -390,11 +391,11 @@ footer{
         display: flex;
         justify-content: space-between;
         min-width: 300px;
-        color: lightgray;
+        color: var(--primary-main);
     }
 
     .footer-menu{
-        padding: 50px 0;
+        padding: 48px 0;
         display:inline-block
     }
 }
